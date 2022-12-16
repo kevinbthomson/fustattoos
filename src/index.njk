@@ -1,0 +1,23 @@
+---
+layout: layouts/base.njk
+title: Home Page
+pagination:
+  data: pages
+  size: 1
+---
+
+<div class="hero-banner" aria-hidden="true"></div>
+
+<div class="container">
+  <section>
+    <ol>
+      {%- for item in pagination.items %}
+      <li>
+        <h2>{{ item.title.rendered | safe }}</h2>
+        <p>{{ item.content.rendered | safe }}</p>
+      </li>
+
+      {% endfor -%}
+    </ol>
+  </section>
+</div>

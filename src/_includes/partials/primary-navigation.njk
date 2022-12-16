@@ -1,0 +1,12 @@
+<nav aria-label="Primary" data-mobile-nav-open="false" id="primary-navigation">
+  <ul>
+    <li>
+      <a href="/">Home</a>
+    </li>
+    {%- for item in pagination.items %}
+    <li>
+      <a href="">{{ item.title.rendered | safe }}</a>
+    </li>
+    {% endfor -%}
+  </ul>
+</nav>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>kevinbthomson - {{ title }}</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Roboto+Slab:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="{{ '/css/styles.css' | url }}" />
+
+    <!-- <script
+      defer
+      src="https://identity.netlify.com/v1/netlify-identity-widget.js"
+      ></script> -->
+  </head>
+  <body>
+    <div class="fus-layout">
+      {% include "../partials/header.njk" %}
+      <main tabindex="-1" id="main-content">
+        {{ content | safe }}
+      </main>
+      {% include "../partials/footer.njk" %}
+    </div>
+
+    <script src="{{ '/js/bundle.js' | url }}"></script>
+  </body>
+</html>
