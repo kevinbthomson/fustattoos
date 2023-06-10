@@ -1,0 +1,18 @@
+---
+pagination:
+  data: artists
+  size: 1
+  alias: artists
+permalink: 'artists/{{ artists.title.rendered | slug }}/'
+layout: layouts/base.njk
+---
+
+<h1>{{ artists.acf.artist_name }}</h1>
+
+<p>{{ artists.acf.artist_about }}</p>
+
+<p>
+  <a href="{{ artists.acf.instagram_link.url }}">{{
+    artists.acf.instagram_link.title
+  }}</a>
+</p>

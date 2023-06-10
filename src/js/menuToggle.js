@@ -2,7 +2,6 @@ function toggleAriaExanded(el) {
   if (el.type === 'button') {
     const expandedAttr = 'aria-expanded';
     const isExpanded = el.getAttribute(expandedAttr);
-    console.log(typeof el, el);
 
     isExpanded === 'true'
       ? el.setAttribute(expandedAttr, 'false')

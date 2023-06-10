@@ -1,6 +1,7 @@
 const esbuild = require('esbuild');
 
 module.exports = function (eleventyConfig) {
+  require('dotenv').config();
   eleventyConfig.addWatchTarget('./src/sass/');
   eleventyConfig.addWatchTarget('./src/js/');
   eleventyConfig.addPassthroughCopy('./src/assets');

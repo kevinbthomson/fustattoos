@@ -1,23 +1,30 @@
 ---
 layout: layouts/base.njk
 title: Home Page
-pagination:
-  data: pages
-  size: 1
 ---
 
-<div class="hero-banner" aria-hidden="true"></div>
+{% include "./_includes/partials/artists.njk" %}
 
-<div class="container">
-  <section>
-    <ol>
-      {%- for item in pagination.items %}
+<section class="posts">
+  <h2>Your Dad</h2>
+  <ol>
+    {%- for item in posts %}
       <li>
-        <h2>{{ item.title.rendered | safe }}</h2>
-        <p>{{ item.content.rendered | safe }}</p>
-      </li>
+        <a href="/posts/{{ item.title.rendered | slug }}">
+          {{ item.title.rendered }}</li>
+      </a>
+    {% endfor -%}
+  </ol>
+</section>
 
-      {% endfor -%}
-    </ol>
-  </section>
-</div>
+<section class="pages">
+  <h2>Your Mom ❤️</h2>
+  <ol>
+    {%- for item in pages %}
+      <li>
+        <a href="/pages/{{ item.title.rendered | slug }}">
+          {{ item.title.rendered }}</li>
+      </a>
+    {% endfor -%}
+  </ol>
+</section>

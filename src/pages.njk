@@ -1,0 +1,13 @@
+---
+pagination:
+  data: pages
+  size: 1
+  alias: pages
+permalink: 'pages/{{ pages.title.rendered | slug }}/'
+layout: layouts/base.njk
+---
+
+<h1>{{ pages.title.rendered }}</h1>
+<div class="mainContent">
+  {{ pages.content.rendered | safe }}
+</div>

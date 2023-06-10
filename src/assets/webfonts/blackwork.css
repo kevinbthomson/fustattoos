@@ -1,0 +1,27 @@
+/*
+Font: 		Blackwork
+Style: 		Regular
+URL: 		https://youworkforthem.com/font/T16768/blackwork
+Foundry: 	Sparrow And Snow
+Foundry: 	https://youworkforthem.com/designer/1474/sparrow-and-snow
+Copyright:	Nomad Visuals Co.™
+Version: 	17
+Created:	August 15, 2022
+License: 	https://www.youworkforthem.com/font-license 
+License: 	The WebFont(s) listed in this document must follow the YouWorkForThem
+			WebFont license rules. All other parties are strictly restricted 
+			from using the WebFonts(s) listed without a purchased license. 
+			All details above must always remain unaltered and visible in your CSS.
+*/
+
+@font-face {
+	font-family: 'BlackworkRegular';
+	src: url('blackwork.eot');
+	src: url('blackwork.eot?#iefix') format('embedded-opentype'),
+             url('blackwork.woff2') format('woff2'),
+	     url('blackwork.woff') format('woff'),
+	     url('blackwork.ttf') format('truetype'),
+	     url('blackwork.svg#youworkforthem') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
