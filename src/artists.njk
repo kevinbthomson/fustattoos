@@ -12,6 +12,13 @@ layout: layouts/base.njk
 <p>{{ artists.acf.artist_about }}</p>
 
 <p>
+  <img
+    src="{{ artists.acf.artist_photo }}"
+    alt="{{ artists.acf.artist_name }}"
+  />
+</p>
+
+<p>
   <a href="{{ artists.acf.instagram_link.url }}">{{
     artists.acf.instagram_link.title
   }}</a>

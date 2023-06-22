@@ -3,7 +3,8 @@ h1,
 h2,
 h3,
 h4 {
-  font-family: var(--heading-font);
+  color: var(--color-primary);
+  font-family: var(--font-heading);
   // text-transform: uppercase;
   font-weight: normal;
   line-height: 1;
@@ -15,7 +16,7 @@ h1 {
 }
 
 h2 {
-  color: var(--black);
+  color: var(--color-black);
   font-size: 2.25rem;
 }
 

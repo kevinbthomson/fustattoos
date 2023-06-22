@@ -1,9 +1,11 @@
 :root {
   /* Colors */
-  --primary-color: #8b241e;
-  --primary-color-dark: hsl(3, 61%, 21%); // #561815
-  --white: #ffffff;
-  --black: #000000;
+  // --color-primary: #8b241e;
+  --color-primary: #7e0105;
+  --color-secondary: hsl(176, 52%, 76%);
+  --color-primary-dark: hsl(3, 61%, 21%); // #561815
+  --color-white: #ffffff;
+  --color-black: #190001;
 
   --gray-10: rgba(0, 0, 0, 0.1);
   --gray-20: rgba(0, 0, 0, 0.2);
@@ -14,10 +16,12 @@
   --gray-80: rgba(0, 0, 0, 0.8);
 
   /* Fonts */
-  // --heading-font: 'Cinzel', serif;
-  --heading-font: 'BlackworkRegular', Helvetica, Arial, Sans-Serif;
-  --body-font: 'Roboto Condensed', sans-serif;
-  --slab-font: 'Roboto Slab', serif;
+  // --font-heading: 'Cinzel', serif;
+  // --font-heading: 'BlackworkRegular', Helvetica, Arial, Sans-Serif;
+  --font-heading: 'Ultra', serif;
+  // --font-body: 'Roboto Condensed', sans-serif;
+  --font-body: 'PT Serif', serif;
+  --font-slab: 'Roboto Slab', serif;
 
   --text-shadow: 0 0.1em 0.125em rgba(0, 0, 0, 0.2);
 }
@@ -28,6 +32,7 @@ $breakpoint-lg: 992px;
 $breakpoint-xl: 1200px;
 
 html {
+  // color-scheme: light dark;
   box-sizing: border-box;
   font-size: 16px;
 }
@@ -40,7 +45,9 @@ html {
 
 html,
 body {
-  font-family: var(--body-font);
+  font-family: var(--font-body);
+  font-size: 1.125rem;
+  line-height: 1.6;
   margin: 0;
   overflow-x: hidden;
   overflow-y: auto;
@@ -53,9 +60,17 @@ body {
   }
 }
 
+img,
+svg,
+video,
+iframe {
+  max-width: 100%;
+  display: block;
+}
+
 .fus-layout {
   display: grid;
-  grid-template-rows: auto 1fr 100px;
+  grid-template-rows: auto 1fr auto;
 
   grid-template-areas:
     'header'
@@ -70,16 +85,16 @@ a {
 
 main {
   grid-area: main;
-  padding: 2rem;
+  padding: 0;
   overflow-y: auto;
   word-wrap: break-all;
 }
 
-.container {
+.wrapper {
   margin-inline: auto;
-  width: min(1200px, 86vw);
+  width: min(65ch, 100% - 4rem);
 
-  @media (min-width: $breakpoint-xl) {
-    width: min(1400px, 86vw);
-  }
+  // @media (min-width: $breakpoint-xl) {
+  //   width: min(1400px, 55ch);
+  // }
 }

@@ -1,39 +1,6 @@
 <header class="site-header">
-  <div class="container">
+  <div class="wrapper">
     <a href="/" title="Home">{{ fus.name }}</a>
-    <div class="site-header__about-us">
-      <p>
-        Since 2001, we've been a respected pillar of Charlotte's growing tattoo
-        and art community. Located at 3200 N. Davidson St, we are NoDa's first
-        and finest tattoo studio.
-      </p>
-
-      <p>
-        Open 7 days a week and happy to take walk-ins on a first-come,
-        first-served basis.
-      </p>
-
-      <p>
-        Give us a call at
-        <a href="tel:{{ fus.contact.phone }}">{{ fus.contact.phone }}</a> to
-        schedule a free consultation with any of our friendly and talented
-        artists!
-      </p>
-    </div>
-
-    <div class="site-header__hours">
-      <p>Monday - Thursday: 12pm - 8pm</p>
-      <p>Friday - Saturday: 12pm - 8pm</p>
-      <p>Sunday: 12pm - 6pm</p>
-    </div>
-
-    <div class="site-header__contact">
-      <p>{{ fus.contact.phone }}</p>
-      <p>
-        <a href="mailto:{{ fus.contact.email }}">{{ fus.contact.email }}</a>
-      </p>
-      <p>{{ fus.contact.address }}</p>
-    </div>
 
     {% include "./primary-navigation.njk" %} {% include
     "./secondary-navigation.njk" %}

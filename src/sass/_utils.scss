@@ -1,0 +1,9 @@
+.flex {
+  display: flex;
+}
+
+.bg {
+  &-primary {
+    background-color: var(--color-primary);
+  }
+}
