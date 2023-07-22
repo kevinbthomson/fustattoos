@@ -1,8 +1,8 @@
-<ol>
+
   {%- for item in artists %}
     <li>
       <a href="/artists/{{ item.title.rendered | slug }}">
         {{ item.title.rendered }}</li>
     </a>
   {% endfor -%}
-</ol>
+

@@ -7,19 +7,28 @@ permalink: 'artists/{{ artists.title.rendered | slug }}/'
 layout: layouts/base.njk
 ---
 
-<h1>{{ artists.acf.artist_name }}</h1>
-
-<p>{{ artists.acf.artist_about }}</p>
+<h1 class="artist-name">{{ artists.acf.artist_name }}</h1>
 
 <p>
   <img
+    class="artist-avatar"
     src="{{ artists.acf.artist_photo }}"
     alt="{{ artists.acf.artist_name }}"
   />
 </p>
+
+<p class="artist-about">{{ artists.acf.artist_about }}</p>
 
 <p>
   <a href="{{ artists.acf.instagram_link.url }}">{{
     artists.acf.instagram_link.title
   }}</a>
 </p>
+
+<div class="portfolio">
+  {{ artists.acf.portfolio_photos | safe }}
+</div>
+
+<div class="portfolio-modal">
+  <img src="" alt="" />
+</div>

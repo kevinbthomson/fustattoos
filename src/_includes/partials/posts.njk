@@ -1,0 +1,12 @@
+<section class="posts">
+  <ol>
+    {%- for item in collections.pages %}
+    <li>
+      <a href="/pages/{{ item.title.rendered | slug }}">
+        {{ item.title.rendered }}</a
+      >
+    </li>
+
+    {% endfor -%}
+  </ol>
+</section>

@@ -3,9 +3,15 @@
     <li>
       <a href="/">Home</a>
     </li>
-    {%- for item in pages.items %}
     <li>
-      <a href="">{{ item.title.rendered | safe }}</a>
+      Artists
+      <ul>
+        {% include "./artists.njk" %}
+      </ul>
+    </li>
+    {%- for item in artist.items %}
+    <li>
+      <a href="">{{ item.title | safe }}</a>
     </li>
     {% endfor -%}
   </ul>

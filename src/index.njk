@@ -7,45 +7,50 @@ title: Home Page
   {{ fus.about_fus}}
 </article>
 
+<h2>Instas</h2>
+{% include "./_includes/partials/instagram.njk" %}
+
 <section class="artists wrapper">
   <h2>Artists</h2>
 {% include "./_includes/partials/artists.njk" %}
 </section>
 
 <section class="posts wrapper">
-  <h2>Your Dad</h2>
+  <h2>What's new pussycat?</h2>
   <ol>
     {%- for item in posts %}
     <li>
       <a href="/posts/{{ item.title.rendered | slug }}">
-        {{ item.title.rendered }}</li>
+        {{ item.title.rendered }}
       </a>
-      {% endfor -%}
-    </ol>
-  </section>
+    </li>
+    {% endfor -%}
+  </ol>
+</section>
   
-  <section class="pages wrapper">
-    <h2>Your Mom ❤️</h2>
-    <ol>
-      {%- for item in pages %}
-      <li>
-        <a href="/pages/{{ item.title.rendered | slug }}">
-          {{ item.title.rendered }}</li>
-        </a>
-        {% endfor -%}
-      </ol>
-    </section>
+<section class="pages wrapper">
+  <h2>Your Mom ❤️</h2>
+  <ol>
+    {%- for item in pages %}
+    <li>
+      <a href="/pages/{{ item.title.rendered | slug }}">
+        {{ item.title.rendered }}
+      </a>
+    </li>  
+    {% endfor -%}
+  </ol>
+</section>
+
+<article class="contact-location">
+  <div class="wrapper">
+    <h2>Location</h2>
     
-    <article class="bg-primary  contact-location">
-      <div class="wrapper">
-        <h2>Location</h2>
-        
-        <div class="flex flex-row">
-          <div>
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3258.373638089785!2d-80.80803151541834!3d35.246959307624735!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88541fd993d49fa7%3A0x983fbc4e5005ebdd!2sFu&#39;s%20Custom%20Tattoo!5e0!3m2!1sen!2sus!4v1687399942567!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-        <div>
-          {% include "./_includes/partials/contact.njk" %}
-        </div>
-      </div>
-    </article>
+    <div class="flex flex-row">
+      <div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3258.373638089785!2d-80.80803151541834!3d35.246959307624735!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88541fd993d49fa7%3A0x983fbc4e5005ebdd!2sFu&#39;s%20Custom%20Tattoo!5e0!3m2!1sen!2sus!4v1687399942567!5m2!1sen!2sus" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <div>
+      {% include "./_includes/partials/contact.njk" %}
+    </div>
+  </div>
+</article>

@@ -7,7 +7,7 @@ permalink: 'pages/{{ pages.title.rendered | slug }}/'
 layout: layouts/base.njk
 ---
 
-<h1>{{ pages.title.rendered }}</h1>
-<div class="mainContent">
+<div class="wrapper">
+  <h1>{{ pages.title.rendered }}</h1>
   {{ pages.content.rendered | safe }}
 </div>

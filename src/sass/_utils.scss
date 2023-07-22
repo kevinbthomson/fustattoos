@@ -1,5 +1,11 @@
 .flex {
   display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+
+  @media (min-width: $breakpoint-md) {
+    flex-wrap: nowrap;
+  }
 }
 
 .bg {

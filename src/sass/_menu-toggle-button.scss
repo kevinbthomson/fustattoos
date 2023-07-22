@@ -10,13 +10,14 @@
   color: white;
   cursor: pointer;
   display: inline-block;
-  height: 5rem;
+  height: 4rem;
   right: 2rem;
   overflow: hidden;
+  // outline: 2px dashed lime;
   position: fixed;
   text-indent: -100vw;
   transition: scale 300ms;
-  width: 5rem;
+  width: 4rem;
   z-index: 1000;
 
   @media (min-width: $breakpoint-md) {
@@ -31,12 +32,12 @@
     content: '';
     display: block;
     height: 3px;
-    left: 20px;
+    left: 16px;
     opacity: 1;
     position: absolute;
     rotate: 0deg;
     scale: 1;
-    top: 30px;
+    top: 26px;
     transition: top 300ms ease-in 300ms, rotate 300ms ease-in, opacity 0s 300ms;
     transform-origin: center;
     width: 28px;
@@ -46,13 +47,13 @@
   // }
 
   span {
-    top: 38px;
+    top: 34px;
     transform-origin: left;
     width: 22px;
   }
 
   &::after {
-    top: 46px;
+    top: 42px;
   }
 
   &[aria-expanded='true'] {
@@ -65,11 +66,11 @@
     }
 
     &::before {
-      top: 38px;
+      top: 34px;
       rotate: 45deg;
     }
     &::after {
-      top: 38px;
+      top: 34px;
       rotate: -45deg;
     }
 
