@@ -1,5 +1,7 @@
 section.instagram {
-  height: 400px;
+  position: relative;
+
+  width: 100dvw;
   --s: 48px; /* control the size */
   --c1: #e6e6e6;
   --c2: #ccc;
@@ -13,14 +15,43 @@ section.instagram {
     radial-gradient(50% 50%, var(--_g)) calc(var(--s) / 2) calc(var(--s) / 2)
       var(--c1);
   background-size: var(--s) var(--s);
+  box-shadow: inset 0 0 1rem rgb(0 0 0 / 0.4);
 
   ul {
     list-style: none;
     margin: 0;
     padding: 0;
     display: flex;
+    justify-content: space-between;
+    // flex-wrap: wrap;
+
+    li {
+      background-color: white;
+      flex: 0 1 auto;
+      border: 0.5rem solid white;
+      box-shadow: 0 2px 10px rgb(0 0 0 / 0.4);
+      display: relative;
+      aspect-ratio: 1/1;
+      rotate: 2deg;
+      transition: all 300ms;
+
+      &:hover {
+        rotate: -1deg;
+        scale: 1.06;
+        z-index: 1000;
+      }
+
+      &:nth-child(odd) {
+        rotate: -1deg;
+
+        &:hover {
+          rotate: 1deg;
+        }
+      }
+    }
 
     img {
+      max-width: 100%;
     }
   }
 }

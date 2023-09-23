@@ -8,8 +8,6 @@ module.exports = async function () {
       type: 'json',
     });
 
-    console.log(typeof response, response);
-
     return response;
   } catch (error) {
     console.error('oh SHIT! Behold: https://app.behold.so/ ' + error);

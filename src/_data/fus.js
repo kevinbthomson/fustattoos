@@ -39,8 +39,7 @@ module.exports = async function () {
 
     const options = response.filter((page) => page.slug === 'options');
 
-    const { acf } = options[0];
-    return acf;
+    return options[0].acf;
   } catch (error) {
     console.error('Eleventy Fetch error: ' + error);
   }

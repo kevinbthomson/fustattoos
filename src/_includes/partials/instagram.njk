@@ -1,11 +1,13 @@
 <section class="instagram">
-  <ul>
-    {%- for item in instagram %}
-    <li>
-      <a href="{{ item.permaLink | safe }}">
-        <img src="{{ item.mediaUrl }}" alt="" />
-      </a>
-    </li>
-    {% endfor -%}
-  </ul>
+  <div class="wrapper">
+    <ul>
+      {%- for item in instagram %}
+      <li>
+        <a href="{{ item.permaLink | safe }}">
+          <img src="{{ item.mediaUrl }}" alt="" />
+        </a>
+      </li>
+      {% endfor -%}
+    </ul>
+  </div>
 </section>
