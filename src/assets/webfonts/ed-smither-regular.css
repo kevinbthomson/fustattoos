@@ -1,0 +1,27 @@
+/*
+Font: 		ED Smither
+Style: 		Regular
+URL: 		https://youworkforthem.com/font/T16584/ed-smither
+Foundry: 	Eko Setiawan
+Foundry: 	https://youworkforthem.com/designer/1196/eko-setiawan
+Copyright:	
+Version: 	17
+Created:	July 15, 2022
+License: 	https://www.youworkforthem.com/font-license 
+License: 	The WebFont(s) listed in this document must follow the YouWorkForThem
+			WebFont license rules. All other parties are strictly restricted 
+			from using the WebFonts(s) listed without a purchased license. 
+			All details above must always remain unaltered and visible in your CSS.
+*/
+
+@font-face {
+	font-family: 'EDSmither-Regular';
+	src: url('ed-smither-regular.eot');
+	src: url('ed-smither-regular.eot?#iefix') format('embedded-opentype'),
+             url('ed-smither-regular.woff2') format('woff2'),
+	     url('ed-smither-regular.woff') format('woff'),
+	     url('ed-smither-regular.ttf') format('truetype'),
+	     url('ed-smither-regular.svg#youworkforthem') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}

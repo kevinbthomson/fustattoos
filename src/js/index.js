@@ -28,6 +28,12 @@ portfolioImageLinks.forEach((link, index) =>
   })
 );
 
+modal.addEventListener('click', () => {
+  if (modal.dataset.open === 'true') {
+    modal.dataset.open = 'false';
+  }
+});
+
 document.addEventListener('keyup', (e) => {
   if (body.dataset.mobileNavOpen === 'true' && e.key === 'Escape') {
     toggleAll();
