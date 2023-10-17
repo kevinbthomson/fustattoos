@@ -49,6 +49,7 @@ nav {
       background-color: transparent;
       background-image: none;
       height: auto;
+
       padding: 0;
       position: relative;
       right: 0;
@@ -120,6 +121,7 @@ nav {
 
       @media (min-width: $breakpoint-lg) {
         margin-top: auto;
+
         gap: 1rem;
       }
     }
