@@ -5,6 +5,8 @@
   "main": "index.js",
   "scripts": {
     "build:eleventy": "npx @11ty/eleventy",
+    "build:sass": "sass src/sass:public/css",
+    "build:css": "postcss ./public/css/styles.css --use autoprefixer --use cssnano --output ./public/css/styles.min.css",
     "watch:eleventy": "npx @11ty/eleventy --serve",
     "watch:sass": "sass --watch src/sass:public/css",
     "start": "npm-run-all --parallel watch:*",
