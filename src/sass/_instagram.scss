@@ -24,7 +24,8 @@ section.instagram {
     margin: 0;
     padding: 0;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+
     gap: 0.5rem;
 
     li {
@@ -55,6 +56,13 @@ section.instagram {
 
     img {
       max-width: 100%;
+    }
+
+    @media (min-width: $breakpoint-md) {
+      grid-template-columns: 1fr 1fr;
+    }
+    @media (min-width: $breakpoint-lg) {
+      grid-template-columns: 1fr 1fr 1fr 1fr;
     }
   }
 }
