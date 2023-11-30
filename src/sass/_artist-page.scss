@@ -10,12 +10,12 @@
 
 .artist-avatar {
   aspect-ratio: 1/1;
-  border-radius: 50%;
-  box-shadow: 2px 5px 10px rgb(11, 94, 111);
   margin-inline: auto;
-  mask-image: url('../assets/images/menu_bg_splat.svg');
+  mask-image: url('../assets/images/sp16.svg');
+  mask-position: center;
   mask-size: cover;
-  min-width: 300px;
+  width: min(60vw, 320px);
+  height: auto;
 }
 
 .portfolio {
@@ -60,23 +60,28 @@
 }
 
 .portfolio-modal {
-  background-color: rgba($color-primary, 0.85);
+  background-color: rgba($color-primary, 1);
   display: grid;
   inset: 0;
-  padding-inline: 2rem;
+  padding-inline: 1rem;
   place-content: center;
   position: fixed;
   transform: translateY(100dvh);
   transition: transform 500ms;
+  z-index: 1200;
 
   &[data-open='true'] {
     transform: translateY(0);
   }
 
   img {
-    border: 1rem solid var(--color-white);
-    box-shadow: 2px 5px 10px rgb(11, 94, 111);
-    max-height: 90dvh;
+    border: 0.5rem solid var(--color-white);
+    box-shadow: 2px 2px 0 var(--color-black);
     height: 100%;
+    max-height: 90dvh;
+
+    @media (min-width: $breakpoint-md) {
+      border: 1rem solid var(--color-white);
+    }
   }
 }
